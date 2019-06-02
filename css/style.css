@@ -254,9 +254,6 @@ input[type="search"]::-webkit-search-decoration {
   -o-animation-duration: 1s;
   -ms-animation-duration: 1s;
   animation-duration: 1s;
-  float: left;
-  position: relative;
-  bottom: 10px;
 }
 @-webkit-keyframes fadeIn {
   0% {
@@ -467,8 +464,8 @@ body >header a {
 .navbar {
   position: absolute;
   width: 2em;
-  right: 0em;
-  top: 1em;
+  left: 0em;
+  bottom: 1em;
   padding: 0.5em;
 }
 @media only screen and (min-width: 1024px) {
