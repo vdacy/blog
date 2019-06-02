@@ -1719,7 +1719,7 @@ section.comment {
 }
 footer {
   margin-top: 1em;
-  background: #f08a00;
+  background: #1f1f1f;
   padding: 0.5em;
   text-align: center;
 }
@@ -1870,7 +1870,7 @@ footer {
   }
 }
 .copyright a {
-  color: #fff;
+  color: #616263;
 }
 .copyright a:hover {
   color: #2ca6cb;
