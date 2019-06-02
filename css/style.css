@@ -254,6 +254,11 @@ input[type="search"]::-webkit-search-decoration {
   -o-animation-duration: 1s;
   -ms-animation-duration: 1s;
   animation-duration: 1s;
+/*TODO 这个菜单标签被修改，如出现异常至此处修改样式，以下为样式调整*/
+  position: absolute;
+  width: 35%;
+  bottom: 1em;
+  float: left;
 }
 @-webkit-keyframes fadeIn {
   0% {
@@ -463,9 +468,9 @@ body >header a {
 }
 .navbar {
   position: absolute;
-  width: 40%;
-  left: 0em;
-  bottom: 1em;
+  width: 2em;
+  right: 0em;
+  top: 1em;
   padding: 0.5em;
 }
 @media only screen and (min-width: 1024px) {
