@@ -340,40 +340,16 @@
       
         
           
-            <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p> 现如今，越来越多的技术人员都搭建了自己的技术博客。此次就借用github的服务器，使用 <strong><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></strong> 做为博客搭建的框架，将博客托管到 Github Pages 上，他支持配置自定义域名，可以在该页面中绑定，当放域名时，会自动映射到 Github 的个人博客上。 </p>
-<h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><p> 安装hexo必须需要在电脑上<strong>先安装 Node.js、Git</strong>，后才能安装 Hexo</p>
-<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>我使用的是 win10 系统进行安装的，安装 <strong>Node.js</strong> 有个诀窍,那就是 <strong>闭上眼</strong> ，一直点击 一步(next)就可以了，当然安装路径根据自己需要进行修改。</p>
-<p>下载链接：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node</a>: <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
-<p><img src="/themes/next/source/images/blog/node_download.png" alt></p>
-<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>此处也是 win10 进行安装的，由于已经安装过了，需要安装的朋友可以参考百度。</p>
-<p>下载链接：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
-<p><img src="/themes/next/source/images/blog/git_download.png" alt></p>
-<h3 id="Git与Github进行绑定"><a href="#Git与Github进行绑定" class="headerlink" title="Git与Github进行绑定"></a>Git与Github进行绑定</h3><p>没有账号github账号的先注册一下: <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
-<p>安装成功后，使用鼠标右键选择 Git Bash Here，执行下面三个命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;你的GitHub用户名&quot;</span><br><span class="line">git config --global user.email &quot;你的GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
-
-<p>使用命令生成ssh密钥，默认不需要设置密码，看到信息后三个回车，生成后会在本机用户下生成密钥文件（id_rsa、id_rsa.pub），我的生成路径为：C:\Users\zu101.ssh</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Github创建仓库绑定密钥"><a href="#Github创建仓库绑定密钥" class="headerlink" title="Github创建仓库绑定密钥"></a>Github创建仓库绑定密钥</h3><p>这里使用测试仓库进行演示，新建一个用于存放个人博客的仓库，后再进入用户设置<br><img src="/themes/next/source/images/blog/github.png" alt="github"><br><img src="/themes/next/source/images/blog/github_setting.png" alt="github"><br>设置ssh<br><img src="/themes/next/source/images/blog/github_setting_ssh.png" alt="github"></p>
-<p>必备的 <strong>NodeJs、Git</strong> 安装后，接下来使用 npm 命令进行安装，安装有一定过程，请等待安装完成</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> npm install -g hexo-cli </span><br><span class="line"> ``` </span><br><span class="line"># Hexo建站</span><br><span class="line">上面我们 Hexo 就安装完成，在指定文件夹下执行如下命令（可在目标文件夹右键选择 Git Bash Here 后执行命令），hexo init blog：hexo会在此文件夹中初始化一个名称为 blog 的文件夹。</span><br></pre></td></tr></table></figure>
-
-<p>hexo init blog<br>cd blog<br>npm install</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">我们从本地启动测试网站,默认会启动本地4000作为访问端口，我们通过Chrome浏览器进行访问 [http://localhost:4000](http://localhost:4000)</span><br><span class="line">```aidl</span><br><span class="line">hexo clean</span><br><span class="line">hexo s --dubug</span><br></pre></td></tr></table></figure>
-
-<p>现在我们本地就可以访问了，但是要真正在网络上进行访问仍需要一些配置，首先我们先配置下 hexo 的配置文件，我们进入刚初始化的文件夹，进入 _config.yml进行配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/vdacy/blog.git #这里填写你在github创建仓库的https链接</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-
-<p>仅仅配置这个是不够的，我们需要在仓库中设置 <strong>GitHub Pages</strong>，配置成功后才能在网络上进行访问</p>
-<ol>
-<li>首先我们先进入创建的仓库中</li>
-<li>进入仓库设置 Settings</li>
-<li>设置GitHub Pages</li>
-</ol>
-<p>进入仓库的设置中，页面往下拉，找到 GitHub Pages，选择master branch<br><img src="/themes/next/source/images/blog/github_setting_pages.png" alt="github_setting_pages"><br>将Settings中的Repository name 改成 <strong>你的giuhub账户名/github.io</strong><br><img src="/themes/next/source/images/blog/github_setting_address.png" alt="github_setting_address"><br>配置成功后你将会看到 Your site is published at <a href="https://name.github.io,就可以在网络中进行访问了" target="_blank" rel="noopener">https://name.github.io,就可以在网络中进行访问了</a><br><img src="/themes/next/source/images/blog/github_setting_ssl.png" alt="github_setting_ssl"><br>如果需要配置自定以域名，可以在github上进行如下配置，没有域名的可以到<a href="https://wanwang.aliyun.com/?spm=5176.8142029.735711.62.e9396d3eSTktEV" target="_blank" rel="noopener">aliyun</a> 上购买，进行实名认证后通过域名解析，后将repository name 填入，还可以在阿里云上申请免费的SSL证书哦<br><img src="/themes/next/source/images/blog/aliyun.png" alt="aliyun"></p>
-
-          
+          简介 现如今，越来越多的技术人员都搭建了自己的技术博客。此次就借用github的服务器，使用 Hexo 做为博客搭建的框架，将博客托管到 Github Pages 上，他支持配置自定义域名，可以在该页面中绑定，当放域名时，会自动映射到 Github 的个人博客上。 
+安装 Hexo 安装hexo必须
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/06/02/如何使用hexo搭建个人博客/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -491,9 +467,16 @@
       
         
           
-            <p>#hexo</p>
+          #hexo
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/06/02/测试使用/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
