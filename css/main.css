@@ -1267,9 +1267,6 @@ pre .javascript .function {
 .use-motion .collection-title {
   opacity: 0;
 }
-.posts-expand {
-  padding-top: 40px;
-}
 @media (max-width: 767px) {
   .posts-expand {
     margin: 0 20px;
@@ -1823,7 +1820,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ac7d9d;
+  background: #8a1fc4;
 }
 .links-of-blogroll {
   font-size: 13px;
