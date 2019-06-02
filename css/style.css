@@ -254,6 +254,9 @@ input[type="search"]::-webkit-search-decoration {
   -o-animation-duration: 1s;
   -ms-animation-duration: 1s;
   animation-duration: 1s;
+  float: left;
+  position: relative;
+  bottom: 10px;
 }
 @-webkit-keyframes fadeIn {
   0% {
