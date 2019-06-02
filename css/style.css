@@ -1859,9 +1859,9 @@ footer {
 .copyright {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "covered_by_your_graceregular";
+  font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
   width: 100%;
-color
+  color: #646566;
   text-align: center;
 }
 @media only screen and (min-width: 768px) {
