@@ -14,6 +14,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -56,7 +63,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=5.1.4">
 
 
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
@@ -74,20 +81,22 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="朱旭的博客" type="application/atom+xml">
 
 
 
 
 
-<meta name="description" content="简介 现如今，越来越多的技术人员都搭建了自己的技术博客。此次就借用github的服务器，使用 Hexo 做为博客搭建的框架，将博客托管到 Github Pages 上，他支持配置自定义域名，可以在该页面中绑定，当放域名时，会自动映射到 Github 的个人博客上。  安装 Hexo 安装hexo必须需要在电脑上先安装 Node.js、Git，后才能安装 Hexo 安装Node.js我使用的是 wi">
+
+<meta name="description" content="简介随着现代互联网发展的浪潮，网络多元化的信息传播途径，越来越多的技术人员都搭建了自己的技术博客，为了分享，乐于折腾的你是否也需要搭建一个自己的个人网站。 本次采用的是WIN10系统作为本地环境,使用 Hexo 博客搭建框架，将博客系统托管到 GitHub 上，通过配置 Github Pages 后可在网络上进行访问。 当然，你有多种选择方案  使用 云服务器 进行搭建 使用 github 作为免">
 <meta name="keywords" content="博客搭建">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何使用Hexo搭建个人博客">
 <meta property="og:url" content="https://vdacy.com/2019/06/02/如何使用hexo搭建个人博客/index.html">
 <meta property="og:site_name" content="朱旭的博客">
-<meta property="og:description" content="简介 现如今，越来越多的技术人员都搭建了自己的技术博客。此次就借用github的服务器，使用 Hexo 做为博客搭建的框架，将博客托管到 Github Pages 上，他支持配置自定义域名，可以在该页面中绑定，当放域名时，会自动映射到 Github 的个人博客上。  安装 Hexo 安装hexo必须需要在电脑上先安装 Node.js、Git，后才能安装 Hexo 安装Node.js我使用的是 wi">
+<meta property="og:description" content="简介随着现代互联网发展的浪潮，网络多元化的信息传播途径，越来越多的技术人员都搭建了自己的技术博客，为了分享，乐于折腾的你是否也需要搭建一个自己的个人网站。 本次采用的是WIN10系统作为本地环境,使用 Hexo 博客搭建框架，将博客系统托管到 GitHub 上，通过配置 Github Pages 后可在网络上进行访问。 当然，你有多种选择方案  使用 云服务器 进行搭建 使用 github 作为免">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://vdacy.com/themes/next/source/images/blog/node_download.png">
+<meta property="og:image" content="https://vdacy.com/source/images/blog/node_download.png">
 <meta property="og:image" content="https://vdacy.com/themes/next/source/images/blog/git_download.png">
 <meta property="og:image" content="https://vdacy.com/themes/next/source/images/blog/github.png">
 <meta property="og:image" content="https://vdacy.com/themes/next/source/images/blog/github_setting.png">
@@ -96,11 +105,11 @@
 <meta property="og:image" content="https://vdacy.com/themes/next/source/images/blog/github_setting_address.png">
 <meta property="og:image" content="https://vdacy.com/themes/next/source/images/blog/github_setting_ssl.png">
 <meta property="og:image" content="https://vdacy.com/themes/next/source/images/blog/aliyun.png">
-<meta property="og:updated_time" content="2019-06-02T09:46:19.809Z">
+<meta property="og:updated_time" content="2019-06-03T06:20:34.550Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何使用Hexo搭建个人博客">
-<meta name="twitter:description" content="简介 现如今，越来越多的技术人员都搭建了自己的技术博客。此次就借用github的服务器，使用 Hexo 做为博客搭建的框架，将博客托管到 Github Pages 上，他支持配置自定义域名，可以在该页面中绑定，当放域名时，会自动映射到 Github 的个人博客上。  安装 Hexo 安装hexo必须需要在电脑上先安装 Node.js、Git，后才能安装 Hexo 安装Node.js我使用的是 wi">
-<meta name="twitter:image" content="https://vdacy.com/themes/next/source/images/blog/node_download.png">
+<meta name="twitter:description" content="简介随着现代互联网发展的浪潮，网络多元化的信息传播途径，越来越多的技术人员都搭建了自己的技术博客，为了分享，乐于折腾的你是否也需要搭建一个自己的个人网站。 本次采用的是WIN10系统作为本地环境,使用 Hexo 博客搭建框架，将博客系统托管到 GitHub 上，通过配置 Github Pages 后可在网络上进行访问。 当然，你有多种选择方案  使用 云服务器 进行搭建 使用 github 作为免">
+<meta name="twitter:image" content="https://vdacy.com/source/images/blog/node_download.png">
 
 
 
@@ -110,7 +119,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":6,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -136,6 +145,17 @@
 
 
 
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "6eadb3c9"
+    });
+  daovoice('update');
+  </script>
+
+
   <title>如何使用Hexo搭建个人博客 | 朱旭的博客</title>
   
 
@@ -147,7 +167,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?66b5e5325fbec61eabf8fc71ca26ed2c";
+      hm.src = "https://hm.baidu.com/hm.js?af4ff115119a9753ad29bf2727250bf2";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -170,7 +190,7 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta custom-logo">
     
 
     <div class="custom-logo-site-title">
@@ -288,7 +308,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="朱旭">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -334,6 +354,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.3k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  4
+                </span>
+              
+            </div>
+          
 
           
 
@@ -350,30 +401,44 @@
       
 
       
-        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p> 现如今，越来越多的技术人员都搭建了自己的技术博客。此次就借用github的服务器，使用 <strong><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></strong> 做为博客搭建的框架，将博客托管到 Github Pages 上，他支持配置自定义域名，可以在该页面中绑定，当放域名时，会自动映射到 Github 的个人博客上。 </p>
-<h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><p> 安装hexo必须需要在电脑上<strong>先安装 Node.js、Git</strong>，后才能安装 Hexo</p>
-<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>我使用的是 win10 系统进行安装的，安装 <strong>Node.js</strong> 有个诀窍,那就是 <strong>闭上眼</strong> ，一直点击 一步(next)就可以了，当然安装路径根据自己需要进行修改。</p>
-<p>下载链接：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node</a>: <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
-<p><img src="/themes/next/source/images/blog/node_download.png" alt></p>
-<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>此处也是 win10 进行安装的，由于已经安装过了，需要安装的朋友可以参考百度。</p>
-<p>下载链接：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
-<p><img src="/themes/next/source/images/blog/git_download.png" alt></p>
-<h3 id="Git与Github进行绑定"><a href="#Git与Github进行绑定" class="headerlink" title="Git与Github进行绑定"></a>Git与Github进行绑定</h3><p>没有账号github账号的先注册一下: <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>随着现代互联网发展的浪潮，网络多元化的信息传播途径，越来越多的技术人员都搭建了自己的技术博客，为了分享，乐于折腾的你是否也需要搭建一个自己的个人网站。</p>
+<p>本次采用的是WIN10系统作为本地环境,使用 <strong><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></strong> 博客搭建框架，将博客系统托管到 GitHub 上，通过配置 Github Pages 后可在网络上进行访问。</p>
+<p>当然，你有多种选择方案</p>
+<ul>
+<li>使用 <strong>云服务器</strong> 进行搭建</li>
+<li>使用 <strong>github</strong> 作为免费服务器使用，没有账号建议先注册 <a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></li>
+<li>亦可使用 <strong><a href="https://pages.coding.me/" target="_blank" rel="noopener">Coding Pages</a></strong>，没有使用过，具体不详</li>
+</ul>
+<h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><p> Hexo安装、部署及配置都需要依赖<strong>Node.js</strong>和<strong>Git</strong>，要想安装使用Hexo，就必须先在电脑或服务器上安装Node.js、Git。</p>
+<h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><p>安装 <strong>Node.js</strong> 有个诀窍：那就是 <strong>闭上眼</strong> ，一直点击下一步(next)就可以了，当然安装路径根据自己需要进行修改。</p>
+<p>下载链接：Node.js <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
+<p><img src="/source/images/blog/node_download.png" alt="node_download"></p>
+<p>##安装Git </p>
+<p>此处也是 win10 进行安装的，由于已经安装过了，需要安装的朋友可以参考百度。</p>
+<p>下载链接：Git <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
+<p><img src="/themes/next/source/images/blog/git_download.png" alt="git_download"></p>
+<p>###Git绑定Github</p>
 <p>安装成功后，使用鼠标右键选择 Git Bash Here，执行下面三个命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;你的GitHub用户名&quot;</span><br><span class="line">git config --global user.email &quot;你的GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
 
-<p>使用命令生成ssh密钥，默认不需要设置密码，看到信息后三个回车，生成后会在本机用户下生成密钥文件（id_rsa、id_rsa.pub），我的生成路径为：C:\Users\zu101.ssh</p>
+<p>使用命令生成ssh密钥，默认不需要设置密码，看到设置直接回车即可，成功后会在本地生成生成id_rsa、id_rsa.pub，具体生成文件的路径 Git Bash Here 上有显示，按照路径去本地中查找，我的生成路径为：C:\Users\zu101.ssh</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
 
-<h3 id="Github创建仓库绑定密钥"><a href="#Github创建仓库绑定密钥" class="headerlink" title="Github创建仓库绑定密钥"></a>Github创建仓库绑定密钥</h3><p>这里使用测试仓库进行演示，新建一个用于存放个人博客的仓库，后再进入用户设置<br><img src="/themes/next/source/images/blog/github.png" alt="github"><br><img src="/themes/next/source/images/blog/github_setting.png" alt="github"><br>设置ssh<br><img src="/themes/next/source/images/blog/github_setting_ssh.png" alt="github"></p>
-<p>必备的 <strong>NodeJs、Git</strong> 安装后，接下来使用 npm 命令进行安装，安装有一定过程，请等待安装完成</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> npm install -g hexo-cli </span><br><span class="line"> ``` </span><br><span class="line"># Hexo建站</span><br><span class="line">上面我们 Hexo 就安装完成，在指定文件夹下执行如下命令（可在目标文件夹右键选择 Git Bash Here 后执行命令），hexo init blog：hexo会在此文件夹中初始化一个名称为 blog 的文件夹。</span><br></pre></td></tr></table></figure>
+<p>###Github使用</p>
+<p>我们新创建一个测试仓库 test 作为存放个人博客的仓库使用，同时需要在 github 上作一些配置</p>
+<p><img src="/themes/next/source/images/blog/github.png" alt="github"><br><img src="/themes/next/source/images/blog/github_setting.png" alt="github_setting"><br>此处配置SSH协议，我们可以连接和验证远程服务器和服务。使用SSH密钥，可以在每次访问时无需提供用户名或密码即可丽娜姐到Github。<br><img src="/themes/next/source/images/blog/github_setting_ssh.png" alt="github_setting_ssh"></p>
+<p><strong>NodeJs、Git</strong> 环境我们已经搭建完毕了，我们通过 npm 命令来进行安装 Hexo，请等待安装完成。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-<p>hexo init blog<br>cd blog<br>npm install</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">我们从本地启动测试网站,默认会启动本地4000作为访问端口，我们通过Chrome浏览器进行访问 [http://localhost:4000](http://localhost:4000)</span><br><span class="line">```aidl</span><br><span class="line">hexo clean</span><br><span class="line">hexo s --dubug</span><br></pre></td></tr></table></figure>
+<p>#Hexo建站</p>
+<p>上述环境已经搭建完毕，此时我们需要做建立站点的操作。我们在指定文件夹下右击鼠标选择菜单栏中的 Git Bash Here，执行如下命令，Hexo 则会在此文件夹中初始化一个名称为 blog 的文件夹。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
-<p>现在我们本地就可以访问了，但是要真正在网络上进行访问仍需要一些配置，首先我们先配置下 hexo 的配置文件，我们进入刚初始化的文件夹，进入 _config.yml进行配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/vdacy/blog.git #这里填写你在github创建仓库的https链接</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>现在我们可以通过命令检测网站搭建是否存在问题，执行如下命令，Hexo 会从本地启动服务，默认会启动4000作为访问端口，在Chrome浏览器地址栏中输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>，能正常显示页面和布局，就证明搭建成功了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo s --dubug</span><br></pre></td></tr></table></figure>
+
+<p>那么目前我们是在本地上进行浏览，要真正实现在网络上进行访问还需要一定的配置，首先需要修改下 Hexo 的配置文件 <strong>_config.yml</strong>，此处 <strong>repo</strong> 需要改成你github创建仓库的https链接</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">     type: git</span><br><span class="line">     repo: https://github.com/vdacy/blog.git </span><br><span class="line">     branch: master</span><br></pre></td></tr></table></figure>
 
 <p>仅仅配置这个是不够的，我们需要在仓库中设置 <strong>GitHub Pages</strong>，配置成功后才能在网络上进行访问</p>
 <ol>
@@ -381,14 +446,61 @@
 <li>进入仓库设置 Settings</li>
 <li>设置GitHub Pages</li>
 </ol>
-<p>进入仓库的设置中，页面往下拉，找到 GitHub Pages，选择master branch<br><img src="/themes/next/source/images/blog/github_setting_pages.png" alt="github_setting_pages"><br>将Settings中的Repository name 改成 <strong>你的giuhub账户名/github.io</strong><br><img src="/themes/next/source/images/blog/github_setting_address.png" alt="github_setting_address"><br>配置成功后你将会看到 Your site is published at <a href="https://name.github.io,就可以在网络中进行访问了" target="_blank" rel="noopener">https://name.github.io,就可以在网络中进行访问了</a><br><img src="/themes/next/source/images/blog/github_setting_ssl.png" alt="github_setting_ssl"><br>如果需要配置自定以域名，可以在github上进行如下配置，没有域名的可以到<a href="https://wanwang.aliyun.com/?spm=5176.8142029.735711.62.e9396d3eSTktEV" target="_blank" rel="noopener">aliyun</a> 上购买，进行实名认证后通过域名解析，后将repository name 填入，还可以在阿里云上申请免费的SSL证书哦<br><img src="/themes/next/source/images/blog/aliyun.png" alt="aliyun"></p>
+<p>进入仓库的 <strong>Settings</strong> 中，将页面往下拉，找到 <strong>GitHub Pages</strong>，选择 <strong>master branch</strong></p>
+<p><img src="/themes/next/source/images/blog/github_setting_pages.png" alt="github_setting_pages"></p>
+<p>将Settings中的Repository name 改成 <strong>你的giuhub账户名.github.io</strong> </p>
+<p><img src="/themes/next/source/images/blog/github_setting_address.png" alt="github_setting_address"></p>
+<p>配置成功后你将会看到 <strong>Your site is published at <a href="https://name.github.io" target="_blank" rel="noopener">https://name.github.io</a></strong>，<strong>Custom domain</strong> 则是配置自己所购买的域名，且是经过实名认证可以正常使用的，<strong>Enforce HTTPS</strong> 是有 <strong><a href="https://baike.baidu.com/item/SSL%E8%AF%81%E4%B9%A6/5201468?fr=aladdin" target="_blank" rel="noopener">SSL</a></strong> 证书的，可以通过 https 进行访问，没有则默认使用 http 协议。</p>
+<p><img src="/themes/next/source/images/blog/github_setting_ssl.png" alt="github_setting_ssl"></p>
+<p>需要购买域名的朋友可以通过此链接至阿里云购买域名 <strong><a href="https://wanwang.aliyun.com/?spm=5176.8142029.735711.62.e9396d3eSTktEV" target="_blank" rel="noopener">aliyun</a></strong> 上购买，进行实名认证后通过域名解析，可以在阿里云上申请免费的SSL证书哦<br><img src="/themes/next/source/images/blog/aliyun.png" alt="aliyun"></p>
+<p>自此，你的个人博客就已经搭建完毕了，我们现在需要通过 Hexo 编写文章，执行命令，Hexo 会在指定目录下创建名称为 <strong>文章title.md</strong> 格式的文件，使用轻量级标记语言 <strong>Markdown</strong> 编写文章，具体语法可以参照 <strong><a href="http://www.markdown.cn/" target="_blank" rel="noopener">Cmd Markdown</a></strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;文章的title&quot;</span><br></pre></td></tr></table></figure>
+
+<p>将文章发布到远程服务器上，可以先通过 <strong>hexo s –dubug</strong> 命令，在本地上先进行测试，由于网络原因，发布到服务器上测试速度较为缓慢，可先通过本地测试浏览，确认没有问题后通过命令发布到远程服务器上。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p><strong>由于Hexo默认主题样式及页面美化问题，我们使用 hexo 的 NexT 作为默认主题使用</strong>，具体请这篇文章<a href></a> </p>
 
       
     </div>
     
     
     
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+  <p><span>本文标题:</span><a href="/2019/06/02/如何使用hexo搭建个人博客/">如何使用Hexo搭建个人博客</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 朱旭 的个人博客">朱旭</a></p>
+  <p><span>发布时间:</span>2019年06月02日 - 09:06</p>
+  <p><span>最后更新:</span>2019年06月03日 - 14:06</p>
+  <p><span>原始链接:</span><a href="/2019/06/02/如何使用hexo搭建个人博客/" title="如何使用Hexo搭建个人博客">https://vdacy.com/2019/06/02/如何使用hexo搭建个人博客/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://vdacy.com/2019/06/02/如何使用hexo搭建个人博客/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
 
+      
+    </div>
     
 
     
@@ -399,7 +511,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/博客搭建/" rel="tag"># 博客搭建</a>
+            <a href="/tags/博客搭建/" rel="tag"><i class="fa fa-tag"></i> 博客搭建</a>
           
         </div>
       
@@ -412,15 +524,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/02/测试使用/" rel="next" title="如何使用hexo搭建个人博客">
-                <i class="fa fa-chevron-left"></i> 如何使用hexo搭建个人博客
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/02/如何优雅的修改next主题/" rel="prev" title="如何优雅的修改next主题">
+                如何优雅的修改next主题 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -450,6 +562,11 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80NDU0Ni8yMTA3Nw=="></div>
+    </div>
+
+  
 
 
 
@@ -466,6 +583,8 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
@@ -486,6 +605,8 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="朱旭">
+            
               <p class="site-author-name" itemprop="name">朱旭</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -497,7 +618,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -509,17 +630,52 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">1</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
           </nav>
 
           
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/vdacy" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:vdacy6@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="/images/avatar.jpg" target="_blank" title="Wechat">
+                      
+                        <i class="fa fa-fw fa-weixin"></i>Wechat</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/xu.zhu.507464" target="_blank" title="Facebook">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>Facebook</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -530,12 +686,12 @@
             <div class="links-of-blogroll motion-element links-of-blogroll-block">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
-                Links
+                友情链接
               </div>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://wujx.top/" title="wujx" target="_blank">wujx</a>
+                    <a href="https://wujx.top/" title="小吴同学的博客" target="_blank">小吴同学的博客</a>
                   </li>
                 
               </ul>
@@ -557,7 +713,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Git"><span class="nav-number">2.2.</span> <span class="nav-text">安装Git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git与Github进行绑定"><span class="nav-number">2.2.1.</span> <span class="nav-text">Git与Github进行绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github创建仓库绑定密钥"><span class="nav-number">2.2.2.</span> <span class="nav-text">Github创建仓库绑定密钥</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">安装 Node.js</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -587,16 +743,6 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
-
 
 
 
@@ -615,6 +761,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
@@ -735,6 +883,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
