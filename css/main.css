@@ -1978,7 +1978,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff6cdd;
+  background: #37ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2857,7 +2857,6 @@ img:hover {
   box-sizing: border-box;
   padding: 40px;
   width: calc(100% - 260px);
-  background: #fff;
   min-height: 700px;
   border-radius: initial;
 }
@@ -3181,21 +3180,27 @@ img:hover {
 }
 .posts-expand .post {
   margin-bottom: 12px;
-  background: #fff;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
 }
 .content-wrap {
   padding: 0px;
+}
+.pagination {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
 }
-.pagination {
-  background-color: #fff;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
-}
 .post-block {
   background-color: #fff;
   padding: 40px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+.comments {
+  background: #fff;
+  width: 100%;
+  margin: -12px 20px 0 0;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+  -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
 }
