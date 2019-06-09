@@ -105,7 +105,7 @@
 <meta property="og:image" content="https://vdacy.com/themes/next/source/images/blog/github_setting_address.png">
 <meta property="og:image" content="https://vdacy.com/themes/next/source/images/blog/github_setting_ssl.png">
 <meta property="og:image" content="https://vdacy.com/themes/next/source/images/blog/aliyun.png">
-<meta property="og:updated_time" content="2019-06-03T06:20:34.550Z">
+<meta property="og:updated_time" content="2019-06-09T13:50:13.745Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何使用Hexo搭建个人博客">
 <meta name="twitter:description" content="简介随着现代互联网发展的浪潮，网络多元化的信息传播途径，越来越多的技术人员都搭建了自己的技术博客，为了分享，乐于折腾的你是否也需要搭建一个自己的个人网站。 本次采用的是WIN10系统作为本地环境,使用 Hexo 博客搭建框架，将博客系统托管到 GitHub 上，通过配置 Github Pages 后可在网络上进行访问。 当然，你有多种选择方案  使用 云服务器 进行搭建 使用 github 作为免">
@@ -413,25 +413,21 @@
 <h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><p>安装 <strong>Node.js</strong> 有个诀窍：那就是 <strong>闭上眼</strong> ，一直点击下一步(next)就可以了，当然安装路径根据自己需要进行修改。</p>
 <p>下载链接：Node.js <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
 <p><img src="/source/images/blog/node_download.png" alt="node_download"></p>
-<p>##安装Git </p>
-<p>此处也是 win10 进行安装的，由于已经安装过了，需要安装的朋友可以参考百度。</p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>此处也是 win10 进行安装的，由于已经安装过了，需要安装的朋友可以参考百度。</p>
 <p>下载链接：Git <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
 <p><img src="/themes/next/source/images/blog/git_download.png" alt="git_download"></p>
-<p>###Git绑定Github</p>
-<p>安装成功后，使用鼠标右键选择 Git Bash Here，执行下面三个命令</p>
+<h3 id="Git绑定Github"><a href="#Git绑定Github" class="headerlink" title="Git绑定Github"></a>Git绑定Github</h3><p>安装成功后，使用鼠标右键选择 Git Bash Here，执行下面三个命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;你的GitHub用户名&quot;</span><br><span class="line">git config --global user.email &quot;你的GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
 
 <p>使用命令生成ssh密钥，默认不需要设置密码，看到设置直接回车即可，成功后会在本地生成生成id_rsa、id_rsa.pub，具体生成文件的路径 Git Bash Here 上有显示，按照路径去本地中查找，我的生成路径为：C:\Users\zu101.ssh</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
 
-<p>###Github使用</p>
-<p>我们新创建一个测试仓库 test 作为存放个人博客的仓库使用，同时需要在 github 上作一些配置</p>
+<h3 id="Github使用"><a href="#Github使用" class="headerlink" title="Github使用"></a>Github使用</h3><p>我们新创建一个测试仓库 test 作为存放个人博客的仓库使用，同时需要在 github 上作一些配置</p>
 <p><img src="/themes/next/source/images/blog/github.png" alt="github"><br><img src="/themes/next/source/images/blog/github_setting.png" alt="github_setting"><br>此处配置SSH协议，我们可以连接和验证远程服务器和服务。使用SSH密钥，可以在每次访问时无需提供用户名或密码即可丽娜姐到Github。<br><img src="/themes/next/source/images/blog/github_setting_ssh.png" alt="github_setting_ssh"></p>
 <p><strong>NodeJs、Git</strong> 环境我们已经搭建完毕了，我们通过 npm 命令来进行安装 Hexo，请等待安装完成。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
-<p>#Hexo建站</p>
-<p>上述环境已经搭建完毕，此时我们需要做建立站点的操作。我们在指定文件夹下右击鼠标选择菜单栏中的 Git Bash Here，执行如下命令，Hexo 则会在此文件夹中初始化一个名称为 blog 的文件夹。 </p>
+<h1 id="Hexo建站"><a href="#Hexo建站" class="headerlink" title="Hexo建站"></a>Hexo建站</h1><p>上述环境已经搭建完毕，此时我们需要做建立站点的操作。我们在指定文件夹下右击鼠标选择菜单栏中的 Git Bash Here，执行如下命令，Hexo 则会在此文件夹中初始化一个名称为 blog 的文件夹。 </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
 <p>现在我们可以通过命令检测网站搭建是否存在问题，执行如下命令，Hexo 会从本地启动服务，默认会启动4000作为访问端口，在Chrome浏览器地址栏中输入<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>，能正常显示页面和布局，就证明搭建成功了。</p>
@@ -478,7 +474,7 @@
   <p><span>本文标题:</span><a href="/2019/06/02/如何使用hexo搭建个人博客/">如何使用Hexo搭建个人博客</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 朱旭 的个人博客">朱旭</a></p>
   <p><span>发布时间:</span>2019年06月02日 - 09:06</p>
-  <p><span>最后更新:</span>2019年06月03日 - 14:06</p>
+  <p><span>最后更新:</span>2019年06月09日 - 21:06</p>
   <p><span>原始链接:</span><a href="/2019/06/02/如何使用hexo搭建个人博客/" title="如何使用Hexo搭建个人博客">https://vdacy.com/2019/06/02/如何使用hexo搭建个人博客/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://vdacy.com/2019/06/02/如何使用hexo搭建个人博客/" aria-label="复制成功！"></i></span>
   </p>
@@ -523,10 +519,6 @@
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/06/02/测试文章间隔/" rel="next" title="如何使用Hexo搭建个人博客">
-                <i class="fa fa-chevron-left"></i> 如何使用Hexo搭建个人博客
-              </a>
             
           </div>
 
@@ -622,7 +614,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -721,7 +713,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">安装 Node.js</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">2.1.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Git"><span class="nav-number">2.2.</span> <span class="nav-text">安装Git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Git绑定Github"><span class="nav-number">2.2.1.</span> <span class="nav-text">Git绑定Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github使用"><span class="nav-number">2.2.2.</span> <span class="nav-text">Github使用</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo建站"><span class="nav-number">3.</span> <span class="nav-text">Hexo建站</span></a></li></ol></div>
             
 
           </div>
