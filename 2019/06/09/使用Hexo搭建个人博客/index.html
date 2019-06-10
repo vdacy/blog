@@ -106,7 +106,7 @@
 <meta property="og:image" content="https://vdacy.com/.com//github_setting_address.png">
 <meta property="og:image" content="https://vdacy.com/.com//github_setting_ssl.png">
 <meta property="og:image" content="https://vdacy.com/.com//aliyun.png">
-<meta property="og:updated_time" content="2019-06-09T15:23:47.480Z">
+<meta property="og:updated_time" content="2019-06-10T00:57:11.458Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo搭建个人博客">
 <meta name="twitter:description" content="简介随着现代互联网发展的浪潮，网络多元化的信息传播途径，越来越多的技术人员都搭建了自己的技术博客，为了分享，乐于折腾的你是否也需要搭建一个自己的个人网站。 本次采用的是WIN10系统作为本地环境,使用 Hexo 博客搭建框架，将博客托管到 GitHub 上，并且配置 Github Pages 实现网络访问。 当然，你有多种选择方案  使用 云服务器 搭建 使用 github 作为免费服务器使用 亦">
@@ -435,14 +435,14 @@
 <h1 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h1><p>Hexo安装、部署及配置都需要依赖<strong>Node.js</strong>和<strong>Git</strong>，我们必须先在电脑或服务器进行安装。</p>
 <h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><p>安装 <strong>Node.js</strong> 有个诀窍：那就是 <strong>闭上眼</strong> ，一直点击下一步(next)就可以了，当然安装路径根据自己需要进行修改。</p>
 <p>下载链接：Node.js <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
-<p><img src="/.com//node_download.png" alt="node_download"></p>
+<p><img src="/.com//node_download.png" alt></p>
 <p><strong>测试安装</strong><br>我们使用[win+r]组合键，输入cmd进入命令窗口，输入命令回车，都能看到版本号表示安装成功</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 
-<p><img src="/.com//node-v.png" alt="node-v"></p>
-<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>此处也是 win10 进行安装的，由于已经安装过了，需要安装的朋友可以参考百度。</p>
+<p><img src="/.com//node-v.png" alt></p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>此处也是 win10 进行安装的，由于已经安装过了，需要安装的朋友可以参考 <a href="https://www.google.com/" target="_blank" rel="noopener">Google</a> or <a href="https://www.baidu.com/" target="_blank" rel="noopener">others</a>。</p>
 <p>下载链接：Git <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></p>
-<p><img src="/.com//git_download.png" alt="git_download"></p>
+<p><img src="/.com//git_download.png" alt></p>
 <h3 id="Git绑定Github"><a href="#Git绑定Github" class="headerlink" title="Git绑定Github"></a>Git绑定Github</h3><p>安装成功后，使用鼠标右键选择 Git Bash Here，执行下面三个命令</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;你的GitHub用户名&quot;</span><br><span class="line">git config --global user.email &quot;你的GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
 
@@ -450,7 +450,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你的GitHub注册邮箱&quot;</span><br></pre></td></tr></table></figure>
 
 <h3 id="Github使用"><a href="#Github使用" class="headerlink" title="Github使用"></a>Github使用</h3><p>我们新创建一个测试仓库 test 作为存放个人博客的仓库使用，同时需要在 github 上作一些配置</p>
-<p><img src="/.com//github.png" alt="github"><br><img src="/.com//github_setting.png" alt="github_setting"><br>此处配置SSH协议，我们可以连接和验证远程服务器和服务。使用SSH密钥，可以在每次访问时无需提供用户名或密码即登录到Github。<br><img src="/.com//github_setting_ssh.png" alt="github_setting_ssh"></p>
+<p><img src="/.com//github.png" alt><br><img src="/.com//github_setting.png" alt><br>此处配置SSH协议，我们可以连接和验证远程服务器和服务。使用SSH密钥，可以在每次访问时无需提供用户名或密码即登录到Github。<br><img src="/.com//github_setting_ssh.png" alt></p>
 <p><strong>NodeJs、Git</strong> 环境我们已经搭建完毕了，我们通过 npm 命令来进行安装 Hexo，请等待安装完成。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
@@ -479,7 +479,7 @@
 <p>免费申请SSL证书：</p>
 <ol>
 <li>进入控制台的域名功能</li>
-<li>进入自己域名后有个管理界面</li>
+<li>进入自己域名后得管理界面</li>
 <li>基本信息下边有个免费申请SSL证书</li>
 <li>选择免费版即可</li>
 </ol>
@@ -489,7 +489,7 @@
 <p>我们将文章发布到服务器前，可先通过 <strong>hexo s –dubug</strong> 命令在本地上先测试，没有问题再发布到服务器上，需要一定时间，请等待。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 
-<p>我们个人博客是搭建好了，那么现在博客主题不是很美观，我们应该怎么去优化，具体可以查看<a href="Hexo主题优化.md">Hexo主题优化</a></p>
+<p>我们个人博客是搭建好了，那么现在博客主题不是很美观，我们应该怎么去优化，具体可以查看<a href="Hexo主题优化/#more">Hexo主题优化</a></p>
 
       
     </div>
